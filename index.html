@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Citibike</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="headerimagebox box">
+            <div class="citibikeimage">
+                <img src="images/citi_bike.jpg">
+            </div>
+        </div>
+
+        <div class="webtitlebox box">
+            <div class="titletext">New York Bike Sharing Analysis</div> 
+        </div>
+        
+        <div class="introductiontextbox box"> 
+            <div class="introductiontext">
+                Using bike sharing services is a fun and affordable way to get around for both locals and tourists, and it is getting more and more widespread in the cities of the world.
+                Unsurprisingly, it is present in New York City as well, under the name Citi Bike. 
+                Opened in 2013, Citi Bike is today the largest bike sharing program in the United States, with 19,000 bikes and over 1,000 stations across Manhattan, Brooklyn, Queens, the Bronx and Jersey City. <br><br>
+
+                But who uses this service? When can we expect to have a lot of bikes at the stations, and when is most of them gone due to high demand? 
+                What are popular starting and stopping stations in New York City? Does the weather have an impact on the enthusiasm towards biking? 
+                And above all, can we use the answer to all these questions to make the service better? By analysing the data provided by Citi Bike, that is what we will figure out!  
+            </div>
+        </div>
+
+        <div class="colorboxyellow">
+            <!--Colorfilled box-->
+        </div>
+
+        <div class="whobox box">
+            <div class="whotextbox box">
+                <undertitlecolor>
+                    Who uses bikesharing?
+                </undertitlecolor>
+                <br><br>
+                <breadtextcolor>
+                    We are now going to take a look at the users of the bike sharing system. Citi Bike provides bikes for two different types of users; customers and subscribers.
+                    Subscribers are annual members of the service while customers buy a short-term pass through the Citi Bike app. <br><br>
+
+                    If we take a look at the bar chart to our right there has been a steady increase in the number of users from 2016 through 2019. 
+                    In 2020 there is a decrease in the amount of users which is expected to be due to the corona pandemic.
+                    New York was hit hard by the pandemic so this seems like a valid explanation. <br><br>
+
+                    If we dive a little deeper into the visualization and look at the gender distribution of the users, we see that the vast majority of users are men.
+                    How is this explained? Are men more active? Do women not like fresh air? We are not able to tell. 
+                    But this should entice Citi Bike to target possible women users with an easy-breezy-happy biking campaign. <br><br>
+
+                    If we change our focus a little and look into the distribution of the user types we see that the majority of users are subscribers. 
+                    But we also see that the ratio of customers increase over the past five years and especially in 2020. 
+                    Maybe the corona pandemic has made us aware of just how unhygienic other people are and so public transportation is ruled out in favor of taking a Citi Bike to get around town? It’s just a guess.<br><br>
+
+                    All of this information about the users can be used as just simple entertainment or we can try to sell it to the Citi Bike organization as information on who to target with advertising. 
+ 
+                </breadtextcolor>
+            </div>
+
+            <div class="whovisualizationbox box">
+                        <!-- Container for the image gallery -->
+                <div class="whoContainer box">
+
+                    <!-- Full-width images with number text -->
+                    <div class="mySlidess">
+                        <embed type="text/html" src="bokehs/genderbokeh.html">
+                    </div>
+
+                    <div class="mySlidess">
+                        <embed type="text/html" src="bokehs/usertypebokeh.html">
+                    </div>
+      
+      
+                    <!-- Thumbnail images -->
+                    <div class="whobuttonbox box">
+                        <div class="ssbuttonbox box">
+                            <img class="whodemo cursor" src="images/gender.png" style="width:100%" onclick="whoCurrentSlide(1)">
+                        </div>
+    
+                        <div class="ssbuttonbox box">
+                            <img class="whodemo cursor" src="images/usertype.png" style="width:100%" onclick="whoCurrentSlide(2)">
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="colorboxyellow">
+            <!--Colorfilled box-->
+        </div>
+
+        <div class="whenbox box">
+            <div class="whenvisualizationbox box">
+                <!-- Container for the image gallery -->
+                <div class="container box">
+                              
+                    <div class="mySlides">
+                        <embed type="text/html" src="bokehs/hourbokeh.html">
+                    </div> 
+
+                    <div class="mySlides">
+                        <embed type="text/html" src="bokehs/weekbokeh.html">
+                    </div>
+
+                    <div class="mySlides">
+                        <embed type="text/html" src="bokehs/monthbokeh.html">
+                    </div>
+                              
+                    <!-- Thumbnail images -->
+                    <div class="buttonbox box">
+                            
+                        <div class="sbuttonbox box">
+                            <img class="demo cursor" src="images/hour.png" style="width:100%" onclick="currentSlide(1)">
+                        </div>
+
+                        <div class="sbuttonbox box">
+                            <img class="demo cursor" src="images/weekday.png" style="width:100%" onclick="currentSlide(2)">
+                        </div>
+                                            
+                        <div class="sbuttonbox box">
+                            <img class="demo cursor" src="images/month.png" style="width:100%" onclick="currentSlide(3)">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="whentextbox box">
+                <undertitlecolor>
+                    When is bikesharing mostly used?
+                </undertitlecolor>
+                <br><br>
+                <breadtextcolor>
+                    Let’s now check how the demand evolves with time. Citi Bike should pay special attention to moments where the demand is high in order to satisfy the demand.<br><br>
+
+                    The plot through the months shows that the demand is high in the summer for both customers  and subscribers. And that is expected it being the easy-breezy time of year and all.  
+                    However, subscribers use the bikes all along the year while customers’ use is concentrated in the summers.  <br><br>
+
+                    From the plot through the weekdays, we can see that subscribers use the bikes mostly on weekdays while customers mostly on week-ends. This also fits well with the proposal that subscribers are cool New Yorkers and customers are turists. One more pattern backing this notion is the hourly pattern. Subscribers use the bikes mostly around 8.00 and 18.00 - you know; 'working nine to five...' Customers in turn use the bikes mostly from noon until dinner time. <br><br>
+
+                    This shows that subscribers and customers are different types of users. Customers are occasional users who choose to use the service for entertainment. 
+                    Subscribers might use the system in order to go to work.  <br><br>
+
+                    As the demand is high on summers for both customers  and subscribers, Citi Bike has to pay attention to this period in order to optimize their system.   <br><br>
+                </breadtextcolor>
+            </div>
+        </div>
+
+        <div class="colorboxyellow">
+            <!--Colorfilled box-->
+        </div>
+
+        <div class="wherebox box">
+            <div class="wheretextbox box">
+                <undertitlecolor>
+                    Where do bikesharing trips start and end?
+                </undertitlecolor>
+                <br><br>
+                <breadtextcolor>
+                    Okay, let’s now take a look at where the users of Citi Bike are rolling from and to ('They see me rollin'). <br> We have prepared som b-e-a-utiful interactive heatmaps for you to investigate the starting and ending stations throughout the hours of the day.
+                    So, if you press play on the ‘Starting station’ heatmap you can see that most of the trips are quite equally distributed over Jersey City. 
+                    If you in turn then press play on the ‘End station’ heatmap you see that still a lot of trips are ending also in Jersey City but there is a significant number of users rolling to New York. <br><br>
+
+                    This means that there is an accumulation of bikes in New York where there does not seem to by anyone wanting to start their biking-trip. 
+                    It then means that Citi Bike has to be aware to redistribute the bikes by moving them back to Jersey City. 
+                    An interesting point is then that this redistribution could be helped on the way by predicting the demand for the coming days so they know how many bikes to move where in advance.  
+
+                </breadtextcolor>
+            </div>
+
+            <div class="wherevisualizationbox box">
+                <div class="heatmapstartbox box">
+                    <subtitle>Starting Point Heatmap</subtitle>
+                    <embed type="text/html" src="heatmaps/heatmapStartingPosition.html">
+                </div>
+    
+                <div class="heatmapstopbox box">
+                    <subtitle>Ending Point Heatmap</subtitle>
+                    <embed type="text/html" src="heatmaps/heatmapStopPosition.html">
+                </div>
+            </div>
+        </div>
+
+        <div class="colorboxyellow">
+            <!--Colorfilled box-->
+        </div>
+
+        <div class="weatherimpactbox box">
+            <div class="weatherimpactvisualizationbox box">
+                <embed type="text/html" src="bokehs/weather_vis.html">
+            </div>
+
+            <div class="weatherimpacttextbox box">
+                <undertitlecolor>
+                    Does weather impact our desire to bike? 
+                </undertitlecolor>
+                <br><br>
+                <breadtextcolor>
+                    In the experience of the creators of this webpage, the enthusiasm towards biking is heavily influenced by the weather conditions. 
+                    Let’s see if the bikers in New York City feel the same way about soaked outfits and wind-blown hairdos! <br><br>
+
+                    In order to assess the impact of the weather, the number of trips made in different weather conditions (such as clear sky or rain) has been counted. 
+                    As we have seen so far, the customers and subscribers of the Citi Bike service tend to behave quite differently, their trips have been calculated separately. <br><br>
+
+                    In the visualization on the left, it can be seen that both customers and subscribers take more than half of their bike trips in clear weather. 
+                    Moreover, more than 80% of trips is made in no worse conditions than partially cloudy! Weather seems to have an impact, indeed, as the people of New York barely make bike trips in rain or snow. <br><br>
+
+                    It is interesting to notice the slight difference between the behaviour of subscribers and customers. 
+                    The one-time users are more likely to bike in good weather conditions (clear or partially cloudy), and less inclined to cycle in precipitation. 
+                    This seems to support the theory that customers are using the service for leisure activities, only when conditions are suitable, and subscribers 
+                    probably use the service as part of their commute, being more likely to bike even in rain or snow.    <br><br>
+                </breadtextcolor>
+            </div>
+        </div>
+
+        <div class="colorboxyellow">
+            <!--Colorfilled box-->
+        </div>
+
+        <div class="machinemodelbox box">
+            <div class="machinemodeltextbox box">
+                <undertitlecolor>
+                    How can we use the learnings from before in order to predict the demand? 
+                </undertitlecolor>
+                <br><br>
+                <breadtextcolor>
+                    We saw all the main factors that have an impact the demand: the year, the month, the day of the week, the weather conditions. 
+                    We have made some magic here for you to be able to see the future (mostly it's just linear regression.. MAGIC).   <br><br>
+
+                    The calculator uses the results of the model. If you enter the different inputs, the predicted demand of the next day is given as an output.  <br><br>
+
+                    The calculator can help Citi Bike to have an idea of the future demand. Citi Bike can then know the quantity of bikes that needs to be moved.
+                    This can avoid having an accumulation of bikes in a certain place. Thus, the demand can be satisfied. They can then make a planning of number of trucks, number of employees needed next day!  <br><br>    
+                </breadtextcolor>
+            </div>
+
+            <div class="machinemodelvisualizationbox box">
+                <div class="calconic-calculator"  data-calculatorid="609a6dceb91eb9001ec5d1af"></div>
+            </div>
+        </div>
+
+        <div class="conclusionbox box">
+            <undertitlecolorcentered>
+                Sooooo people and bikes in New York City:
+            </undertitlecolorcentered>
+            <br><br>
+            <breadtextcolor>
+                What we have seen here is that subscribers are taking the most trips, women don't like to get their outfit messed up by biking, 2020 taught us about our fellow citizen's lack of hygiene and no one wants to go to Jersey City! 
+            </breadtextcolor>
+        </div>
+
+    </body>
+    
+    <script>
+        (function() { var qs,j,q,s,d=document, gi=d.getElementById,
+        ce=d.createElement, gt=d.getElementsByTagName,
+        id="calconic_", b="https://cdn.calconic.com/static/js/";
+        if(!gi.call(d,id)) { j=ce.call(d,"script"); j.id=id; j.type="text/javascript"; j.async=true;
+        j.dataset.calconic=true;
+        j.src=b+"calconic.min.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(j,q) }
+      })();
+    </script>
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex); 
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+
+
+        var slideIndex = 1;
+        whoShowSlides(slideIndex); 
+
+        // Thumbnail image controls
+        function whoCurrentSlide(n) {
+        whoShowSlides(slideIndex = n);
+        }
+
+        function whoShowSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlidess");
+        var dots = document.getElementsByClassName("whodemo");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" whoactive", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " whoactive";
+        }
+    </script>
+
+</html>
